@@ -1,0 +1,44 @@
+{% extends 'front_end/base.html'%} {% block content %} {% load static %}
+
+<aside id="fh5co-hero">
+  <div class="flexslider">
+    <ul class="slides">
+      <li style="background-image: url('{{blog_data.image.url}}')">
+        <div class="overlay-gradient"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center slider-text">
+              <div class="slider-text-inner">
+                <h1 class="heading-section">{{blog_data.title}}</h1>
+                <h2>Trade Skills Development Limited</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</aside>
+
+<div id="fh5co-course">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 animate-box">
+        <div class="card course shadow-sm">
+          <div class="card-body" style="background-color: #fafafa">
+            <h3 class="card-title" style="text-align: center">
+              {{blog_data.title}}
+            </h3>
+            <p class="card-text" style="text-align: center">
+              {{blog_data.author}} | {{blog_data.date}}
+            </p>
+            <hr />
+            <p class="card-text">{{blog_data.content | safe}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
+</div>

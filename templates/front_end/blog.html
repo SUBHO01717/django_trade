@@ -1,0 +1,84 @@
+{% extends 'front_end/base.html'%} {% block content %} {% load static %}
+
+<aside id="fh5co-hero">
+  <div class="flexslider">
+    <ul class="slides">
+      <li style="background-image: url('{% static 'images/img_bg_4.jpg' %}')">
+        <div class="overlay-gradient"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center slider-text">
+              <div class="slider-text-inner">
+                <h1 class="heading-section">Blog</h1>
+                <h2>Trade Skills Development Ltd.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</aside>
+
+<!--blog SECTIONS -->
+<div id="fh5co-course">
+  <div class="container">
+    <div class="row animate-box">
+      <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+        <h2>Blogs</h2>
+        <p>
+          whats our community says about training and Skill Development sections
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      {% for item in blog_data %}
+      <div class="col-md-4 animate-box">
+        <div class="card course shadow-sm">
+          <a href="/blog_details/{{item.id}}"
+            ><img
+              class="card-img-top"
+              src="{{item.image.url}}"
+              alt="Card image cap"
+          /></a>
+          <div class="card-body text-center" style="background-color: #fafafa">
+            <a href="/blog_details/{{item.id}}"
+              ><h3 class="card-title" style="text-align: center">
+                {{item.title}}
+              </h3></a
+            >
+            <p class="card-text" style="text-align: center">
+              Published : {{item.date}} | Author: {{item.author}} |
+            </p>
+            <hr />
+
+            <a href="/blog_details/{{item.id}}" class="btn btn-Card"
+              >Read more</a
+            >
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+      <div>
+        <div style="text-align: center">
+          {% if blog_data.has_previous %}
+          <a
+            class="btn btn-Card shadow-md"
+            href="{% url 'blog' %}?page={{blog_data.previous_page_number}}"
+            >Previous</a
+          >
+          {% endif %} {% if blog_data.has_next %}
+          <a
+            class="btn btn-Card shadow-md"
+            href="{% url 'blog' %}?page={{blog_data.next_page_number}}"
+            >Next</a
+          >
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

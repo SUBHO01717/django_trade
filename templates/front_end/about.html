@@ -1,0 +1,132 @@
+{% extends 'front_end/base.html'%} {% block content %} {% load static %}
+
+<aside id="fh5co-hero">
+  <div class="flexslider">
+    <ul class="slides">
+      <li style="background-image: url('{% static 'images/img_bg_4.jpg' %}')">
+        <div class="overlay-gradient"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center slider-text">
+              <div class="slider-text-inner">
+                <h1 class="heading-section">About Us</h1>
+                <h2>Trade Skills Development Limited</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</aside>
+
+<div id="fh5co-about">
+  <div class="container">
+    <div class="col-md-6 animate-box">
+      <h1>Trade Skills Development Ltd.</h1>
+      <h3>Welcome to our Website</h3>
+      <p>
+        Our main objective to create more efficient engineers. Our hands on
+        training and Expert Trainers provide more realistic examples and share
+        their experiences which makes the participant's life easier in the real
+        world.
+      </p>
+      <p>
+        TSD delivered Accredited Gas, Electrical, Plumbing and Construction
+        training courses in London, enabling students from all over the UK .
+      </p>
+      <p>
+        We are open 5 days every week and we welcome visitors to our Centre at
+        any time. We do not require you to make an appointment; please feel free
+        to turn up to look at what we do, meet our staff and chat with existing
+        students. From a location point of view we are well situated for road,
+        rail and bus links.
+      </p>
+    </div>
+    <div class="col-md-6 animate-box">
+      <img
+        style="
+          border-radius: 10px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          border: 1px white;
+          padding: 5px;
+        "
+        class="img-responsive"
+        src="{% static 'images/tsd-Classroom.jpeg'%}"
+        alt="TSD_CLASSROOM_IMAGE"
+      />
+    </div>
+  </div>
+</div>
+
+<div id="fh5co-course-categories" style="background-color: rgb(236, 236, 236)">
+  <div class="container">
+    <div class="row animate-box">
+      <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+        <h2>Course categories</h2>
+        <p style="text-align: justify">
+          Trade Skills Development Ltd. is an engineering skills training
+          company which has been providing top quality, industrially relevant,
+          short, practical electrical, Gas and plumbing courses in the UK. We
+          provide, a comprehensive range of highly-focused technical courses
+          from bench fitting skills to programmable logic controllers A strong
+          emphasis on useful practical skills A hands-on approach to training so
+          that delegates ‘learn by doing’ on modern industrial equipment
+          Competence based.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 text-center animate-box">
+        <div class="services">
+          <span class="icon">
+            <i class="icon-radar-outline"></i>
+          </span>
+          <div class="desc">
+            <h3><a href="#">Gas Engineering</a></h3>
+            <p>
+              Our gas engineering courses have been Accredited by awarding
+              bodies with our students in mind. Whether you're a new entrant to
+              the industry or you just need to update your existing gas
+              qualifications, TSD can help you.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 text-center animate-box">
+        <div class="services">
+          <span class="icon">
+            <i class="icon-flash-outline"></i>
+          </span>
+          <div class="desc">
+            <h3><a href="#">Electrician</a></h3>
+            <p>
+              Offering both an NVQ Level 3 Electrical Training course and the
+              Domestic Electrical Installer Award, we have an electrician course
+              to suit you. Designed to meet your needs, train with TSD to gain
+              industry-recognised mentor.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 text-center animate-box">
+        <div class="services">
+          <span class="icon">
+            <i class="icon-libreoffice"></i>
+          </span>
+          <div class="desc">
+            <h3><a href="#">Plumber</a></h3>
+            <p>
+              Our NVQ Level 2 plumbing course is designed to provide you with
+              the plumbing skills you need in today's market. With both
+              theoretical and practical training, TSD deliver training course
+              that will provide you with the ability to go straight into work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

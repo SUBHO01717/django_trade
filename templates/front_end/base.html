@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  {% load static %}
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+      Trade Skills Developments-A Place Where we create Technical Expert.
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="https://www.tsd.org.uk/" />
+    <meta name="keywords" content="https://www.tsd.org.uk/" />
+    <meta name="author" content="https://www.tsd.org.uk/" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{% static 'css/animate.css'%}" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="{% static 'css/icomoon.css'%}" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}" />
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}" />
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}" />
+
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="{% static 'css/flexslider.css'%}" />
+
+    <!-- Pricing -->
+    <link rel="stylesheet" href="{% static 'css/pricing.css'%}" />
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+
+    <!-- Modernizr JS -->
+    <script src="{% static 'js/modernizr-2.6.2.min.js'%}"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="fh5co-loader"></div>
+    <!--NAVBAR SECTIONS -->
+    <div id="page">
+      <nav class="fh5co-nav" role="navigation">
+        <div class="top">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-right">
+                <p class="site">
+                  <a href="mailto:contact@tsd.org.uk">info@tsd.org.uk</a>
+                </p>
+                <p class="num">Call: +44 0203 00 23 555</p>
+                <ul class="fh5co-social">
+                  <li>
+                    <a href="whatsapp://call?number=+44 0203 00 23 555"
+                      ><i class="icon-whatsapp"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-facebook2"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-twitter2"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-2">
+                <div id="fh5co-logo">
+                  <a href="{% url 'index' %}"
+                    ><img
+                      height="70"
+                      width="auto"
+                      src="{% static 'images/cropped-TSD.png' %}"
+                      alt="Logo"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-xs-10 text-right menu-1">
+                <ul>
+                  <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                  <li><a href="{% url 'about' %}">About us </a></li>
+                  <li><a href="{% url 'course' %}">Our Courses</a></li>
+                  <li>
+                    <a href="{% url 'our_teachers' %}">Our Faculty Members</a>
+                  </li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                  <li class="has-dropdown">
+                    <a href="{% url 'blog' %}">Blog</a>
+                  </li>
+
+                  <li class="btn-cta">
+                    <a href="#"><span>Login</span></a>
+                  </li>
+                  <li class="btn-cta">
+                    <a href="#"><span>BOOK NOW !</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--NAVBAR SECTIONS END -->
+
+      {% block content %} {% endblock %}
+
+      <!--INSTRAGRAM SECTIONS -->
+      <div id="fh5co-gallery" class="fh5co-bg-section">
+        <div class="row text-center">
+          <h2><span>Instagram Gallery</span></h2>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-padded">
+            <a
+              href="#"
+              class="gallery"
+              style="background-image: url(images/project-5.jpg)"
+            ></a>
+          </div>
+          <div class="col-md-3 col-padded">
+            <a
+              href="#"
+              class="gallery"
+              style="background-image: url(images/project-2.jpg)"
+            ></a>
+          </div>
+          <div class="col-md-3 col-padded">
+            <a
+              href="#"
+              class="gallery"
+              style="background-image: url(images/project-3.jpg)"
+            ></a>
+          </div>
+          <div class="col-md-3 col-padded">
+            <a
+              href="#"
+              class="gallery"
+              style="background-image: url(images/project-4.jpg)"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!--INSTRAGRAM SECTIONS -->
+
+      <!--FOOTER SECTIONS -->
+      <footer
+        id="fh5co-footer"
+        role="contentinfo"
+        style="background-image: url(images/img_bg_4.jpg)"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row row-pb-md">
+            <div class="col-md-4 fh5co-widget">
+              <img
+                style="height: 70px"
+                src="{% static 'images/TSD-WHITE-LOGO.png'%}"
+                alt="Logo"
+              />
+              <br /><br />
+              <h3>About Trade Skills Development</h3>
+              <p>
+                A leading organization to create techinical Experts. Trade
+                Skills Development deliveres Accredited Gas, Electrical,
+                Plumbing and Construction training courses in London, enabling
+                students from all over the UK .
+              </p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+              <h3>Quick Links</h3>
+              <ul class="fh5co-footer-links">
+                <li><a href="#">Course</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Meetups</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+              <h3>Contact Us</h3>
+              <ul class="fh5co-footer-links">
+                <li><a href="#">Course</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Meetups</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row copyright">
+            <div class="col-md-12 text-center">
+              <p>
+                <small class="block"
+                  >&copy; 2021 Trade Skills Development. All Rights
+                  Reserved.</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!--FOOTER SECTIONS ENDS -->
+
+      <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+      </div>
+
+      <!-- jQuery -->
+      <script src="{% static 'js/jquery.min.js'%}"></script>
+      <!-- jQuery Easing -->
+      <script src="{% static 'js/jquery.easing.1.3.js'%}"></script>
+      <!-- Bootstrap -->
+      <script src="{% static 'js/bootstrap.min.js'%}"></script>
+      <!-- Waypoints -->
+      <script src="{% static 'js/jquery.waypoints.min.js'%}"></script>
+      <!-- Stellar Parallax -->
+      <script src="{% static 'js/jquery.stellar.min.js'%}"></script>
+      <!-- Carousel -->
+      <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+      <!-- Flexslider -->
+      <script src="{% static 'js/jquery.flexslider-min.js'%}"></script>
+      <!-- countTo -->
+      <script src="{% static 'js/jquery.countTo.js'%}"></script>
+      <!-- Magnific Popup -->
+      <script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>
+      <script src="{% static 'js/magnific-popup-options.js'%}"></script>
+      <!-- Count Down -->
+      <script src="{% static 'js/simplyCountdown.js'%}"></script>
+      <!-- Main -->
+      <script src="{% static 'js/main.js'%}"></script>
+      <script>
+        var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+        // default example
+        simplyCountdown(".simply-countdown-one", {
+          year: d.getFullYear(),
+          month: d.getMonth() + 1,
+          day: d.getDate(),
+        });
+
+        //jQuery example
+        $("#simply-countdown-losange").simplyCountdown({
+          year: d.getFullYear(),
+          month: d.getMonth() + 1,
+          day: d.getDate(),
+          enableUtc: false,
+        });
+      </script>
+    </div>
+  </body>
+</html>
